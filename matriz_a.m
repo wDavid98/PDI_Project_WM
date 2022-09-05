@@ -1,4 +1,5 @@
 function fam = matriz_a(nfotos, nfamosos, rows , cols, nfam, original)
+    %Transformar para recibir las 5 fotos de diferente tamaño, hacer el resize y generar la matriz A
     fam = zeros(nfotos,120*80);
     for i = 1:nfotos
         min_col = (cols/nfotos)*(i-1)+1;
